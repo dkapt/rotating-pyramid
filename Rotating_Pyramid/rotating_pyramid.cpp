@@ -353,7 +353,7 @@ void myGlutDisplay( void )
 	// Pyramid
   glPushMatrix();	//This function saves the current transformation matrix by pushing it onto the stack. This allows us to modify the transformation matrix (with scaling, translation, or rotation operations), then later return it to its previous state.
   glTranslatef( 0.0, 0.0, -5.0 );	//Applies a translation transformation to the current matrix. Here, it moves the current drawing position to the left along the X-axis by 0.5 units. The Y and Z coordinates are unchanged.
-  glMultMatrixf( pyramid_rotate );	//Multiplies the current transformation matrix by the matrix specified by pyramid_rotate. This effectively applies the transformation encoded in sphere_rotate to the current drawing position. pyramid_rotate is an array of 16 floating-point values representing a 4x4 transformation matrix.
+  glMultMatrixf( pyramid_rotate );	//Multiplies the current transformation matrix by the matrix specified by pyramid_rotate. This effectively applies the transformation encoded in pyramid_rotate to the current drawing position. pyramid_rotate is an array of 16 floating-point values representing a 4x4 transformation matrix.
   
   /*** Now we render object, using the variable 'wireframe' ***/
   if (wireframe)
