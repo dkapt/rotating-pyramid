@@ -589,12 +589,12 @@ int main(int argc, char* argv[])
   new GLUI_Column( glui2, false );
   
   GLUI_Translation *trans_y = 
-    new GLUI_Translation( glui2, "Axis blue (Y)", GLUI_TRANSLATION_Y, &obj_pos[1] );
+    new GLUI_Translation( glui2, "Axis green (Y)", GLUI_TRANSLATION_Y, &obj_pos[1] );
   trans_y->set_speed( .005 );
   new GLUI_Column( glui2, false );
   
   GLUI_Translation *trans_z = 
-    new GLUI_Translation( glui2, "Axis green (Z)", GLUI_TRANSLATION_Z, &obj_pos[2] );
+    new GLUI_Translation( glui2, "Axis blue (Z)", GLUI_TRANSLATION_Z, &obj_pos[2] );
   trans_z->set_speed( .005 );
 
 
